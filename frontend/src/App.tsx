@@ -14,7 +14,9 @@ function App() {
       <Col></Col>
       <Col></Col>
       <Col></Col>
-      <Col><h1>BLACK FRIDAY</h1></Col>
+      <Col><h1>BLACK FRIDAY</h1><Button onClick={onClick}
+    variant="outline-primary" id="Button-1" size="lg">Play Now
+    </Button></Col>
       <Col></Col>
       <Col></Col>
       <Col></Col>
@@ -22,12 +24,7 @@ function App() {
     <Row></Row>
     <Row>
       <Col></Col>
-      <Col></Col>
-    <Button onClick={onClick}
-    variant="outline-primary" id="Button-1" size="lg">Play Now
-    </Button>{'  '}
-    <Col></Col>
-    <Canvas></Canvas>
+    <Col><Canvas></Canvas></Col>
     <Col></Col>
     </Row>
   </Container>
