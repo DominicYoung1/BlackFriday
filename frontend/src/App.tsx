@@ -5,7 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container, Row, Col} from 'react-bootstrap';
 import Button from 'react-bootstrap/Button'
 import {Canvas} from './canvas'
-function App() {
+
+import { myGameLoop } from './game-loop';
+export const App: React.FC<{}> = () => {
   const onClick = () => { 
 
   }
@@ -24,7 +26,7 @@ function App() {
     <Row></Row>
     <Row>
       <Col></Col>
-    <Col><Canvas></Canvas></Col>
+    <Col><Canvas gameLoop={myGameLoop}></Canvas></Col>
     <Col></Col>
     </Row>
   </Container>
